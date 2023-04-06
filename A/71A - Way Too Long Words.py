@@ -1,7 +1,11 @@
 n = int(input())
+res_list = []
 for i in range(n):
     word = input()
     if len(word) > 10:
-        print(f'{word[0]}{len(word)}{word[-1]}')
+        res_list.append(f'{word[0]}{len(word)-2}{word[-1]}')
     else:
-        print(word)
+        res_list.append(word)
+
+for i in range(len(res_list)):
+    print(res_list[i])
