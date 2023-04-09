@@ -1,0 +1,19 @@
+n = int(input())
+c = 0
+while n != 0:
+    if n >= 100:
+        c+=n//100
+        n = n%100
+    elif 100>n>=20:
+        c+=n//20
+        n = n%20
+    elif 20>n>=10:
+        c+=n//10
+        n = n%10
+    elif 10>n>=5:
+        c+=n//5
+        n = n%5
+    elif 5>n>=1:
+        c+=n//1
+        n = n%1
+print(c)
