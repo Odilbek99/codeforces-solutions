@@ -6,7 +6,6 @@ r = n
 
 min_ = None
 while r <= m:
-    print(line[l:r+1])
     if min_ != None:
         min_ = min(min_,max(line[l:r])-min(line[l:r]))
         
